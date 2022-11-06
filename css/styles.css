@@ -376,6 +376,7 @@ footer{
 /* start products styles */
 
 .product-block{
+    width: 1200px;
     padding-bottom: 94px;
 }
 
