@@ -43,7 +43,7 @@ body{
 
 /* start header styles */
 
-.border-line{
+header{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -343,7 +343,9 @@ footer{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-}
+    list-style: none;
+    padding-bottom: 50px;
+} 
 
 .folio-button{
     font-family: inherit;
@@ -373,8 +375,40 @@ footer{
 
 /* start products styles */
 
+.product-block{
+    padding-bottom: 94px;
+}
+
+.product-lists{
+    list-style: none;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.product-list{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.product-list:nth-child(3n){
+    margin-right: 0;
+}
+
+.product-list:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .product-link{
     text-decoration: none;
+}
+
+.product-link img{
+    display: block;
+}
+
+.product-link .details{
+    padding: 20px 24px;
 }
 
 .product-name{
