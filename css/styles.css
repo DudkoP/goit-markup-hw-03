@@ -127,7 +127,7 @@ header{
     color: var(--color-7575);
     font-weight: 500;
     padding: 32px 0;
-        display: block;
+    display: block;
 }
 
 .header-link:hover,
@@ -380,9 +380,9 @@ footer{
 }
 
 .product-lists{
+    padding: 0;
     list-style: none;
     flex-wrap: wrap;
-    box-sizing: content-box;
 }
 
 .product-list{
