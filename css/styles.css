@@ -12,6 +12,7 @@
     --color-f5f4: #F5F4FA;
     --color-darkfooter: #2F303A;
     --color-black: #000;
+    --color-button-active: #188CE8;
 }
 
 .visually-hidden {
@@ -73,6 +74,7 @@ header{
 }
 
 .header-logo-link{
+    padding: 13px 0;
     text-decoration: none;
     color: var(--color-black);
     font-family: 'Raleway';
@@ -143,23 +145,26 @@ header{
 /* start hero styles */
 
 .section{
-    padding-top: 94px;
+    padding: 94px 0;
+}
+
+.hero{
+    background-color: #2F303A;
+    padding: 200px 0;
 }
 
 .hero-block{
-    background-color: #2F303A;
-    padding-top: 200px;
 }
 
 .hero-title{
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 3.75;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:var(--color-white);
-    margin-bottom: 30px;
-    padding: 0;
+    color: var(--color-white);
+    padding-bottom: 30px;
 }
 
 .hero-button{
@@ -173,17 +178,13 @@ header{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin-bottom: 200px;
 }
 
-.hero-button:hover{
-    cursor: pointer;
-}
-
+.hero-button:hover, 
 .hero-button:focus{
-    color: var(--color-blue);
-    background: var(--color-white);
-    border: 1px solid #000;
+    cursor: pointer;
+    color: var(--color-white);
+    background: var(--color-button-active);
 }
 
 /* start advantages(adv) styles */
@@ -202,6 +203,7 @@ header{
 }
 
 .adv-title{
+    font-size: inherit;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.03em;
@@ -263,11 +265,11 @@ header{
 .lists .item.team{
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team.item .details{
-    margin: 30px 0;
+    padding: 30px 0;
 }
 
 .details .team-block-title{
@@ -284,19 +286,20 @@ header{
 
 .team-block-details{
     font-size: 16px;
-        line-height: 1.1875;
-        letter-spacing: 0.03em;
-        color:var(--color-7575);
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
+    color:var(--color-7575);
 }
 
 /* start footer styles */
 
 footer{
+    padding: 60px 0;
     background-color: var(--color-darkfooter);
 }
 
 .footer-block{
-    padding: 60px 0;
+
 }
 
 .footer-logo-link{
@@ -321,6 +324,11 @@ footer{
 .footer-contact-list{
     list-style: none;
     font-style: normal;
+    margin-bottom: 9px;
+}
+
+.footer-contact-list:last-child {
+    margin-bottom: 0;
 }
 
 .footer-contact-link{
@@ -330,7 +338,6 @@ footer{
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    margin-bottom: 9px;
 }
 
 
