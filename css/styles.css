@@ -164,7 +164,7 @@ header{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .hero-button{
@@ -222,13 +222,12 @@ header{
 }
 
 /* start working styles */ 
+.working-block{
+    padding-bottom: 94px;
+}
 
 .working-block .topic{
     padding-bottom: 50px;
-}
-
-.working-block .lists{
-    padding-bottom: 94px;
 }
 
 .working-block .lists img{
@@ -311,7 +310,10 @@ footer{
     line-height: 1.9375;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-bottom: 20px;
+}
+
+address {
+    margin-top: 20px;
 }
 
 .company-address{
@@ -439,11 +441,4 @@ footer{
     letter-spacing: 0.03em;
     color: var(--color-7575);
     text-decoration: none;
-}
-
-.product-name:hover,
-.product-name:focus,
-.product-type:hover,
-.product-type:focus {
-    color:var(--color-blue);
 }
